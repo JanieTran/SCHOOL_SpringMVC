@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <!-- Microsoft JQuery CDN -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="heading">Heading</div>
+
+        <div id="body">
+            
+        </div>
+
+        <input type="text" id="name">
+
+        <div id="footer">Footer</div>
+
+        <button id="btnHide">Hide</button>
+        <button id="btnShow">Show</button>
+
+        <button id="btnSlideUp">Slide Up</button>
+        <button id="btnSlideDown">Slide Down</button>
+
+        <button id="btnGetSet">GetSet</button>
+    </div>
+</body>
+
+<script>
+    // Basic JQuery syntax: $(selector).action
+    // 3 basic groups of actions: show/hide, get/set, ajax
+
+    // Show/hide
+    $('#btnHide').click(function() {
+        $('#heading').hide()
+    })
+
+    $('#btnShow').click(function() {
+        $('#heading').show()
+    })
+
+    $('#btnSlideUp').click(function() {
+        $('#footer').slideUp()
+    })
+
+    $('#btnSlideDown').click(function() {
+        $('#footer').slideDown()
+    })
+
+    // Get/Set
+    $('#btnGetSet').click(function() {
+        $('#heading').html('<h1>jQuery</h1>')
+        $('#body').text('Body')
+        $('#name').val('Phuong')
+        console.log($('#heading').html())
+        console.log($('#heading').text())
+        console.log($('#name').val())
+    })
+</script>
+
+</html>

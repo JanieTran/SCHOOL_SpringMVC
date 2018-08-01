@@ -1,0 +1,173 @@
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+/* Navigation */
+
+.bg-primary {
+    background-color: #0C713D !important;
+}
+
+.navbar .container h3 {
+    color: white;
+    margin-top: 15px;
+}
+
+#index-header {
+    margin-top: 20px;
+}
+
+header {
+    margin-top: 54px;
+}
+
+footer {
+    background-color: #0C713D;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+#stores-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Carousel */
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.carousel-img {
+    width: 1900px;
+    height: 700px;
+}
+
+/* Body text */
+
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style: normal !important;
+    text-transform: uppercase !important;
+    color: #0C713D;
+}
+
+p {
+    margin-top: 50px;
+}
+
+.container h2 {
+    color: #0C713D;
+    margin-top: 50px;
+}
+
+.devicon, .devicon:hover {
+    color: white;
+    font-size: 1.75rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.about-header-footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-right: 350px;
+    margin-left: 350px;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.col-lg-10 p {
+    margin-top: 0px !important;
+}
+
+.col-lg-10 h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: none !important;
+}
+
+/* Card */
+
+.card-text {
+    margin-top: 20px;
+}
+
+.card-title {
+    text-transform: none !important;
+}
+
+/* Select */
+
+.custom-select {
+    font-size: 1rem;
+}
+
+/* Images */
+
+.index-img {
+    width: 700px;
+    height: 450px;
+}
+
+.stores-img {
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+#product-chosen {
+    display: none;
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+}
+
+/* Stores */
+
+.d1, .d3, .d5, .d7, .dtb {
+    display: none;
+}
+
+/* Order */
+
+#submit-order {
+    background-color: #0C713D;
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#total-label {
+    color: #0C713D;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#total, #currency {
+    font-size: 1.75rem;
+}

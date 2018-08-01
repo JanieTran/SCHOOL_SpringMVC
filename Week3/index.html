@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JavaScript</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <script src="main.js"></script>
+    <script>
+        // Log, alert
+        console.log('Hello log')
+        alert('Hello alert')
+        document.write('Hello document write')
+
+        // Variable declaration
+        var i = 1
+        var s = 'v'
+        var f = 19.1
+
+        // Function declaration
+        function hello() {
+            console.log('Hello function')
+        }
+
+        function bye(name) {
+            alert('Bye ' + name)
+        }
+
+        function add(a, b) {
+            return a + b
+        }
+
+        hello()
+        bye('V')
+        console.log(add(19, 1));
+        
+        // Escape, string literal
+        doubleQuote = "This is how you use \"nested double quote\""
+        tick = 'tick'
+        stringWithVar = `Remember the ${tick} instead of quote`
+        console.log(stringWithVar)
+        
+        // Loop
+        for (i = 0; i <= 10; i++) {
+            document.write(`${i}, `)
+        }
+
+        // Function before body
+        function setDiv() {
+            // document: representation of the website - DOM: document object model
+            document.getElementById('div1').innerHTML = "<h1>Function before body</h1>"
+        }
+    </script>
+</head>
+
+<!-- Common events: onload, onclick, onsubmit, onkeypress, onmouseover, onmouseout, onchange, onfocus, onblur -->
+<body onload="setDiv();">
+    <div id="div1" onmouseover="doWhenMouseOver();" onmouseout="doWhenMouseOut();"></div>
+    <div id="div2"></div>
+
+    <input type="text" id="name" onfocus="doWhenFocus();" onblur="doWhenBlur();" onchange="doWhenChange();">
+    <input type="text" id="txt" onkeypress="doWhenKeyPress();">
+
+    <button onclick="clickMe();" ondblclick="doubleClickMe();">Click</button>
+</body>
+
+<script>
+    // Get/set value
+    document.getElementById('div2').innerHTML = "<h1>Get Element by ID</h1>"
+    
+    // Define behaviour
+    function clickMe() {
+        alert('Button clicked')
+    }
+    function doWhenFocus() {
+        console.log('Focus on input');
+    }
+    function doWhenBlur() {
+        console.log('Blur input');
+    }
+    function doWhenMouseOver() {
+        console.log('Mouse over div1');
+    }
+    function doWhenMouseOut() {
+        console.log('Mouse out div1');
+    }
+    function doubleClickMe() {
+        console.log('Button double clicked');
+    }
+    function doWhenChange() {
+        console.log('Input changed');
+    }
+    function doWhenKeyPress() {
+        console.log('Key pressed');
+    }
+
+    // Class and objects
+    var student1 = {
+        name: 'Phuong',
+        age: 20
+    }
+    console.log(student1.name)
+    console.log(student1.age);
+    
+    var student2 = {
+        name: 'Phuong',
+        age: 20
+    }
+
+    var listOfStudents = [student1, student2]
+    for (var i = 0; i < listOfStudents.length; i++) {
+        listOfStudents[i].age += 1
+    }
+    console.log(listOfStudents);
+    console.log(JSON.stringify(listOfStudents));
+
+    // JSON
+    var strListOfStudents = JSON.stringify(listOfStudents)
+    var jsonListOfStudents = JSON.parse(strListOfStudents)
+    console.log(jsonListOfStudents)
+</script>
+
+</html>

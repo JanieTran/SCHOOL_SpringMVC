@@ -1,0 +1,52 @@
+.heading {
+    /* Text */
+    color: indigo;
+    background-color: hotpink;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32pt;
+    font-style: oblique;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Box */
+    border: 5px solid darkmagenta;
+    padding: 16px;
+    margin: 16px;
+}
+
+.main {
+    color: dimgrey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 16px;
+}
+
+.footer {
+    color: dodgerblue;
+}
+
+table, tr, th, td {
+    border: 3px solid darkmagenta;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    word-spacing: 50px;
+}
+
+li {
+    display: inline;
+}
+
+@media print {
+    .printButton {
+        display: none;
+    }
+}
+
+@media screen {
+    .printButton {
+        color: red;
+    }
+}

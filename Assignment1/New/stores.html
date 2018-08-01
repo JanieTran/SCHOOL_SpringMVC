@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stores - Phuc Long Coffee &amp Tea House</title>
+
+    <!-- Bootstrap -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- Microsoft JQuery CDN -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+        <!-- Website name -->
+        <h3>Phuc Long Coffee &amp Tea House</h3>
+        
+        <div class="navbar">
+            <!-- ml-auto: auto margin left to set menu on the right -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Stores</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Order</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <div class="about-header-footer">
+        <h3>Stores in Ho Chi Minh City</h3>
+
+        <select name="district" id="district" class="custom-select" onchange="chooseDistrict();">
+            <option value="0" selected>Choose District</option>
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="7">7</option>
+            <option value="TB">Tan Binh</option>
+        </select>
+    </div>
+</header>
+
+<!-- PAGE BODY -->
+<div class="container">
+    <div class="d1">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/takashimaya.jpg">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long Takashimaya</h4>
+                <p>B217 Takashimaya Department Store, 92-94 Nam Ky Khoi Nghia, District 1</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d1">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/macthibuoi.jpg">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long Mac Thi Buoi</h4>
+                <p>63 Mac Thi Buoi, District 1</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="d1">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/phamhongthai.jpg">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long Pham Hong Thai</h4>
+                <p>42 Pham Hong Thai, District 1</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d3">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/levansy.JPG">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long Le Van Sy</h4>
+                <p>350 Le Van Sy, District 3</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d3">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/romea.jpg">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long RomeA</h4>
+                <p>B-004A RomeA Department Store, 117 Nguyen Dinh Chieu, District 3</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d3">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/trancaovan.jpg">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long Tran Cao Van</h4>
+                <p>42 Tran Cao Van, District 3</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d5">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/tranhungdao.JPG">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long 188 Tran Hung Dao</h4>
+                <p>188 Tran Hung Dao, District 5</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="d5">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/goldenplaza.jpg">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long Golden Plaza</h4>
+                <p>G-001 Golden Plaza Department Store, 992 Nguyen Trai, District 5</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d5">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/382thd.jpg">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long 382 Tran Hung Dao</h4>
+                <p>382 Tran Hung Dao, District 5</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d7">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/nguyenhuutho.jpg">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long Nguyen Huu Tho</h4>
+                <p>1F-32 LOTTE Mart District 7, 469 Nguyen Huu Tho, District 7</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d7">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/crescent.jpg">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long Crescent Mall</h4>
+                <p>Crescent Mall, 101 Ton Dat Tien, Phu My Hung, District 7</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d7">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/vivo.jpg">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long SC Vivo City</h4>
+                <p>01-41A &amp 01-41B, SC Vivo City, 1058 Nguyen Van Linh Boulevard, Tan Phong Ward, District 7</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="dtb">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/conghoa.jpg">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long Cong Hoa</h4>
+                <p>1B Cong Hoa, District Tan Binh</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="dtb">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <img class="stores-img img-fluid rounded" src="img/stores/truongchinh.jpg">
+            </div>
+
+            <div class="col-lg-10">
+                <h4>Phuc Long Truong Chinh</h4>
+                <p>493 Truong Chinh, District Tan Binh</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="stores-footer">
+    <div class="text-center">
+        <a href="http://www.facebook.com/phuclongcoffeeandtea" class="devicon"><i class="devicon-facebook-plain"></i></a>
+        <a href="https://twitter.com/phuclong6" class="devicon"><i class="devicon-twitter-plain"></i></a>
+        <a href="https://phuclong.com.vn/" class="devicon"><i class="devicon-chrome-plain"></i></a>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+
+    <input type="number" id="opA" placeholder="Operand a">
+    <select name="operator" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="opB" placeholder="Operand b">
+    <span>=</span>
+    <span id="result"></span>
+
+    <button id="calculate">Calculate</button>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $('#calculate').click(function() {
+            var opA = parseInt($('#opA').val())
+            var opB = parseInt($('#opB').val())
+
+            switch ($('#operator').val()) {
+                case '+':
+                    var result = opA + opB
+                    break;
+                
+                case '-':
+                    var result = opA - opB
+                    break;
+            
+                case '*':
+                    var result = opA * opB
+                    break;
+
+                case '/':
+                    var result = opA / opB
+                    break;
+
+                default:
+                    break;
+            }
+
+            $('#result').text(result)
+        })
+    })
+</script>
+</html>
