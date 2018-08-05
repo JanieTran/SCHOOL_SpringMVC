@@ -39,7 +39,7 @@ To construct this bean, Spring need the following properties:
             sessionFactoryBean.setDataSource(dataSource);
 
             sessionFactoryBean.setHibernateProperties(properties);
-            sessionFactoryBean.setPackagesToScan("clinic.entity");
+            sessionFactoryBean.setPackagesToScan("clinic.model");
 
 
             return  sessionFactoryBean;

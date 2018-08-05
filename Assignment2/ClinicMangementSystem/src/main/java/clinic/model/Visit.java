@@ -1,4 +1,4 @@
-package clinic.entity;
+package clinic.model;
 
 import org.hibernate.annotations.Cascade;
 

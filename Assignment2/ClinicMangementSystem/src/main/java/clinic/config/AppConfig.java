@@ -3,22 +3,21 @@ package clinic.config;
 
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import clinic.service.PersonService;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 
 import java.util.Properties;
 
-/**
- * Created by CoT on 10/13/17.
- */
-
 @Configuration // Class contains Beans
 @EnableTransactionManagement
+@EnableWebMvc
+@ComponentScan({"clinic.controller", "clinic.service"})
 public class AppConfig {
 
     @Bean
@@ -37,17 +36,11 @@ public class AppConfig {
         dataSource.setUsername("postgres");
         dataSource.setPassword("m1ssPh0rtun3");
 
-        //To use local hsqldb
-//        dataSource.setDriverClassName("org.hsqldb.jdbcDriver");
-//        dataSource.setUrl("jdbc:hsqldb:mem:testdb");
-//        dataSource.setUsername("sa");
-//        dataSource.setPassword("");
-
         LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
         sessionFactoryBean.setDataSource(dataSource);
 
         sessionFactoryBean.setHibernateProperties(properties);
-        sessionFactoryBean.setPackagesToScan("clinic.entity");
+        sessionFactoryBean.setPackagesToScan("clinic.model");
 
 
         return  sessionFactoryBean;

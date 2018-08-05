@@ -1,6 +1,5 @@
 
 import clinic.config.AppConfig;
-import clinic.service.PersonService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -8,10 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class Main {
     public static void main(String[] args){
-
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-
-        PersonService personService = (PersonService) context.getBean("personService");
-
+        context.refresh();
     }
 }
