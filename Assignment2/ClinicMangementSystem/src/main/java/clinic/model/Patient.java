@@ -1,7 +1,11 @@
 package clinic.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Patient {
@@ -18,7 +22,7 @@ public class Patient {
     private String name;
 
     @Column
-    private Date birthday;
+    private String birthday;
 
     @Column
     private String gender;
@@ -26,15 +30,24 @@ public class Patient {
     @Column
     private String address;
 
+    @OneToMany(mappedBy = "patient")
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    @JsonIgnore
+    private List<Visit> visits;
+
     // ====================================================================
     // CONSTRUCTOR
     // ====================================================================
 
-    public Patient(String name, Date birthday, String gender, String address) {
+    public Patient() {
+    }
+
+    public Patient(String name, String birthday, String gender, String address) {
         this.name = name;
         this.birthday = birthday;
         this.gender = gender;
         this.address = address;
+        this.visits = new ArrayList<>();
     }
 
     // ====================================================================
@@ -49,7 +62,7 @@ public class Patient {
         return name;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
@@ -59,6 +72,10 @@ public class Patient {
 
     public String getAddress() {
         return address;
+    }
+
+    public List<Visit> getVisits() {
+        return visits;
     }
 
     // ====================================================================
@@ -73,7 +90,7 @@ public class Patient {
         this.name = name;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 

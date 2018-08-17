@@ -15,42 +15,60 @@ import java.util.List;
 public class DiseaseService {
     @Autowired
     private SessionFactory sessionFactory;
-    private Session currentSession;
 
     public void setSessionFactory(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
-        currentSession = sessionFactory.getCurrentSession();
     }
+
+    // ====================================================================
+    // CREATE
+    // ====================================================================
 
     public void saveDisease(Disease disease) {
-        currentSession.save(disease);
+        sessionFactory.getCurrentSession().save(disease);
     }
 
-    public Disease getDiseaseByIcd(String icd) {
-        Query query = currentSession.createQuery("from Disease d where d.icd like :icd");
-        query.setString("icd", icd);
+    // ====================================================================
+    // READ
+    // ====================================================================
 
-        return (Disease) query.uniqueResult();
+    public Disease getDiseaseById(int id) {
+        return (Disease) sessionFactory.getCurrentSession().get(Disease.class, id);
+    }
+
+    public List<Disease> getDiseaseByIcd(String icd) {
+        Query query = sessionFactory.getCurrentSession().createQuery("from Disease d where d.icd like :icd");
+        query.setString("icd", "%" + icd + "%");
+
+        return query.list();
     }
 
     public List<Disease> getAllDiseases() {
-        Query query = currentSession.createQuery("from Disease");
+        Query query = sessionFactory.getCurrentSession().createQuery("from Disease");
         return query.list();
     }
 
     public List<Disease> findDiseaseByName(String name) {
-        Query query = currentSession.createQuery("from Disease d where d.name like :name");
+        Query query = sessionFactory.getCurrentSession().createQuery("from Disease d where d.name like :name");
         query.setString("name", "%" + name + "%");
 
         return query.list();
     }
 
+    // ====================================================================
+    // UPDATE
+    // ====================================================================
+
     public void updateDisease(Disease disease) {
-        currentSession.update(disease);
+        sessionFactory.getCurrentSession().update(disease);
     }
 
-    public void deleteDisease(String icd) {
-        Disease disease = (Disease) currentSession.get(Disease.class, icd);
-        currentSession.delete(disease);
+    // ====================================================================
+    // DELETE
+    // ====================================================================
+
+    public void deleteDisease(int id) {
+        Disease disease = (Disease) sessionFactory.getCurrentSession().get(Disease.class, id);
+        sessionFactory.getCurrentSession().delete(disease);
     }
 }

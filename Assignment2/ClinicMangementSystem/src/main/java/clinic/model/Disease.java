@@ -1,8 +1,6 @@
 package clinic.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Disease {
@@ -11,6 +9,10 @@ public class Disease {
     // ====================================================================
 
     @Id
+    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
     @Column
     private String icd;
 
@@ -21,6 +23,9 @@ public class Disease {
     // CONSTRUCTOR
     // ====================================================================
 
+    public Disease() {
+    }
+
     public Disease(String icd, String name) {
         this.icd = icd;
         this.name = name;
@@ -29,6 +34,10 @@ public class Disease {
     // ====================================================================
     // GETTERS
     // ====================================================================
+
+    public int getId() {
+        return id;
+    }
 
     public String getIcd() {
         return icd;
@@ -41,6 +50,10 @@ public class Disease {
     // ====================================================================
     // SETTERS
     // ====================================================================
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public void setIcd(String icd) {
         this.icd = icd;

@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f43d21e7-c06b-436a-8391-a5b009390538" name="Default Changelist" comment="" />
+    <list default="true" id="f43d21e7-c06b-436a-8391-a5b009390538" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/DrugController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/PrescriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/VisitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/data/diseases.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/data/drugs.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Drug.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/PrescribedDrugs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/DrugService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/PrescriptionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/VisitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/DiseaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/DiseaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Disease.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Disease.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Prescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Visit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/DiseaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/DiseaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/~$signment 2 Note.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week5/HelloHibernateAnnotation/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week5/HelloHibernateAnnotation/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week5/HelloHibernateAnnotation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week5/HelloHibernateAnnotation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/StudentService.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +74,25 @@
       <usages-collector id="statistics.spring.boot.mvc.usages" />
       <usages-collector id="statistics.js.language.service.starts" />
     </session>
+    <session id="-1900322988">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -59,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="82">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,26 +120,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            <state relative-caret-position="513">
+              <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/CarService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/TeacherController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="209">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/CarController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/TeacherService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="285">
+              <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -123,12 +172,12 @@
         <option value="$PROJECT_DIR$/src/main/java/config/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/StudentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/TeacherService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/TeacherController.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/CarService.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/CarController.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Car.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/TeacherController.java" />
       </list>
     </option>
   </component>
@@ -140,7 +189,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
-    <option name="width" value="980" />
+    <option name="width" value="979" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -151,9 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,13 +261,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533271904534" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Week5/HelloHibernateAnnotation" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -264,16 +313,18 @@
       <workItem from="1533262874499" duration="1819000" />
       <workItem from="1533264779363" duration="7233000" />
       <workItem from="1533471827168" duration="72000" />
+      <workItem from="1534309720955" duration="532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9124000" />
+    <option name="totallyTimeSpent" value="9656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17986578" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18255034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -290,7 +341,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22269504" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22269504" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -325,20 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/TeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="39" column="94" selection-start-line="39" selection-start-column="94" selection-end-line="39" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TeacherController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/config/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -360,23 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/CarService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -386,8 +406,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="171">
+          <caret line="17" column="16" selection-start-line="17" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TeacherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/TeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
         </state>
       </provider>
     </entry>

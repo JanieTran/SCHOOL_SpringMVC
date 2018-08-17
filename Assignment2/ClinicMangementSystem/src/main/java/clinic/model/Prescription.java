@@ -1,63 +1,71 @@
 package clinic.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Cascade;
+
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
 public class Prescription {
     // ====================================================================
     // PROPERTIES
     // ====================================================================
 
-    private String drugName;
-    private int quantity;
+    @Id
+    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @OneToMany(mappedBy = "prescription")
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    @JsonIgnore
+    private List<PrescribedDrugs> drugs;
+
+    @Column
     private String dose;
-    private String instruction;
 
     // ====================================================================
     // CONSTRUCTOR
     // ====================================================================
 
-    public Prescription(String drugName, int quantity, String dose, String instruction) {
-        this.drugName = drugName;
-        this.quantity = quantity;
+    public Prescription() {
+    }
+
+    public Prescription(List<PrescribedDrugs> drugs, String dose) {
+        this.drugs = drugs;
         this.dose = dose;
-        this.instruction = instruction;
     }
 
     // ====================================================================
     // GETTERS
     // ====================================================================
 
-    public String getDrugName() {
-        return drugName;
+    public int getId() {
+        return id;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public List<PrescribedDrugs> getDrugs() {
+        return drugs;
     }
 
     public String getDose() {
         return dose;
     }
 
-    public String getInstruction() {
-        return instruction;
-    }
-
     // ====================================================================
     // SETTERS
     // ====================================================================
 
-    public void setDrugName(String drugName) {
-        this.drugName = drugName;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setDrugs(List<PrescribedDrugs> drugs) {
+        this.drugs = drugs;
     }
 
     public void setDose(String dose) {
         this.dose = dose;
-    }
-
-    public void setInstruction(String instruction) {
-        this.instruction = instruction;
     }
 }

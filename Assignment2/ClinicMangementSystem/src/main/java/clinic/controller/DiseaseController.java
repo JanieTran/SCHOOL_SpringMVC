@@ -13,7 +13,17 @@ public class DiseaseController {
     private DiseaseService diseaseService;
 
     // ====================================================================
-    // CRUD
+    // CREAE
+    // ====================================================================
+
+    @RequestMapping(path = "add-diseases", method = RequestMethod.POST)
+    public String addDisease(@RequestBody Disease disease) {
+        diseaseService.saveDisease(disease);
+        return log(disease.getId(), "post");
+    }
+
+    // ====================================================================
+    // READ
     // ====================================================================
 
     @RequestMapping(path = "diseases", method = RequestMethod.GET)
@@ -21,8 +31,13 @@ public class DiseaseController {
         return diseaseService.getAllDiseases();
     }
 
-    @RequestMapping(path = "diseases/{icd}", method = RequestMethod.GET)
-    public Disease getDiseaseByIcd(@PathVariable String icd) {
+    @RequestMapping(path = "diseases/id/{id}", method = RequestMethod.GET)
+    public Disease getDiseaseById(@PathVariable int id) {
+        return diseaseService.getDiseaseById(id);
+    }
+
+    @RequestMapping(path = "diseases-icd/{icd}", method = RequestMethod.GET)
+    public List<Disease> getDiseaseByIcd(@PathVariable String icd) {
         return diseaseService.getDiseaseByIcd(icd);
     }
 
@@ -31,29 +46,31 @@ public class DiseaseController {
         return diseaseService.findDiseaseByName(name);
     }
 
-    @RequestMapping(path = "add-diseases", method = RequestMethod.POST)
-    public String addDisease(@RequestBody Disease disease) {
-        diseaseService.saveDisease(disease);
-        return log(disease.getIcd(), "post");
-    }
+    // ====================================================================
+    // UPDATE
+    // ====================================================================
 
     @RequestMapping(path = "update-disease", method = RequestMethod.PUT)
     public String updateDisease(@RequestBody Disease disease) {
         diseaseService.updateDisease(disease);
-        return log(disease.getIcd(), "update");
+        return log(disease.getId(), "update");
     }
 
-    @RequestMapping(path = "del-disease/{icd}", method = RequestMethod.DELETE)
-    public String deleteDisease(@PathVariable String icd) {
-        diseaseService.deleteDisease(icd);
-        return log(icd, "delete");
+    // ====================================================================
+    // DELETE
+    // ====================================================================
+
+    @RequestMapping(path = "del-disease/{id}", method = RequestMethod.DELETE)
+    public String deleteDisease(@PathVariable int id) {
+        diseaseService.deleteDisease(id);
+        return log(id, "delete");
     }
 
     // ====================================================================
     // HELPER FUNCTION
     // ====================================================================
 
-    private String log(String icd, String method) {
+    private String log(int id, String method) {
         switch (method) {
             case "post":
                 method = "added";
@@ -70,6 +87,6 @@ public class DiseaseController {
             default:
                 break;
         }
-        return "Disease " + icd + " has been " + method;
+        return "Disease " + id + " has been " + method;
     }
 }

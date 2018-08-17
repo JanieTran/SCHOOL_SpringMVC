@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import java.util.Properties;
 
-@Configuration // Class contains Beans
+@Configuration
 @EnableTransactionManagement
 @EnableWebMvc
 @ComponentScan({"clinic.controller", "clinic.service"})
@@ -32,7 +32,7 @@ public class AppConfig {
 
         //To use postgresql
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/hello");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/clinic");
         dataSource.setUsername("postgres");
         dataSource.setPassword("m1ssPh0rtun3");
 

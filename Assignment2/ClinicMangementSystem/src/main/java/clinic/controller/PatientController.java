@@ -13,7 +13,17 @@ public class PatientController {
     private PatientService patientService;
 
     // ====================================================================
-    // CRUD
+    // CREATE
+    // ====================================================================
+
+    @RequestMapping(path = "add-patient", method = RequestMethod.POST)
+    public String addPatient(@RequestBody Patient patient) {
+        patientService.savePatient(patient);
+        return log(patient.getId(), "post");
+    }
+
+    // ====================================================================
+    // READ
     // ====================================================================
 
     @RequestMapping(path = "patients", method = RequestMethod.GET)
@@ -26,22 +36,29 @@ public class PatientController {
         return patientService.getPatientById(id);
     }
 
-    @RequestMapping(path = "find-patient/{name}", method = RequestMethod.GET)
+    @RequestMapping(path = "find-patient-name/{name}", method = RequestMethod.GET)
     public List<Patient> getPatientByName(@PathVariable String name) {
         return patientService.findPatientByName(name);
     }
 
-    @RequestMapping(path = "add-patient", method = RequestMethod.POST)
-    public String addPatient(@RequestBody Patient patient) {
-        patientService.savePatient(patient);
-        return log(patient.getId(), "post");
+    @RequestMapping(path = "find-patient-birthday/{birthday}", method = RequestMethod.GET)
+    public List<Patient> getPatientByBirthday(@PathVariable String birthday) {
+        return patientService.findPatientByBirthday(birthday);
     }
+
+    // ====================================================================
+    // UPDATE
+    // ====================================================================
 
     @RequestMapping(path = "update-patient", method = RequestMethod.PUT)
     public String updatePatient(@RequestBody Patient patient) {
         patientService.updatePatient(patient);
         return log(patient.getId(), "update");
     }
+
+    // ====================================================================
+    // DELETE
+    // ====================================================================
 
     @RequestMapping(path = "del-patient/{id}", method = RequestMethod.DELETE)
     public String deletePatient(@PathVariable int id) {

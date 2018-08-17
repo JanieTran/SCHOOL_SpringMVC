@@ -15,42 +15,63 @@ import java.util.List;
 public class PatientService {
     @Autowired
     private SessionFactory sessionFactory;
-    private Session currentSession;
 
     public void setSessionFactory(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
-        currentSession = sessionFactory.getCurrentSession();
     }
+
+    // ====================================================================
+    // CREATE
+    // ====================================================================
 
     public void savePatient(Patient patient) {
-        currentSession.save(patient);
+        sessionFactory.getCurrentSession().save(patient);
     }
 
+    // ====================================================================
+    // READ
+    // ====================================================================
+
     public Patient getPatientById(int id) {
-        Query query = currentSession.createQuery("from Patient where id:id");
+        Query query = sessionFactory.getCurrentSession().createQuery("from Patient where id:id");
         query.setInteger("id", id);
 
         return (Patient) query.uniqueResult();
     }
 
     public List<Patient> getAllPatients() {
-        Query query = currentSession.createQuery("from Patient");
+        Query query = sessionFactory.getCurrentSession().createQuery("from Patient");
         return query.list();
     }
 
     public List<Patient> findPatientByName(String name) {
-        Query query = currentSession.createQuery("from Patient p where p.name like :name");
+        Query query = sessionFactory.getCurrentSession().createQuery("from Patient p where p.name like :name");
         query.setString("name", "%" + name + "%");
 
         return query.list();
     }
 
-    public void updatePatient(Patient patient) {
-        currentSession.update(patient);
+    public List<Patient> findPatientByBirthday(String birthday) {
+        Query query = sessionFactory.getCurrentSession().createQuery("from Patient p where p.birthday like :birthday");
+        query.setString("birthday", "%" + birthday + "%");
+
+        return query.list();
     }
 
+    // ====================================================================
+    // UPDATE
+    // ====================================================================
+
+    public void updatePatient(Patient patient) {
+        sessionFactory.getCurrentSession().update(patient);
+    }
+
+    // ====================================================================
+    // DELETE
+    // ====================================================================
+
     public void deletePatient(int id) {
-        Patient patient = (Patient) currentSession.get(Patient.class, id);
-        currentSession.delete(patient);
+        Patient patient = (Patient) sessionFactory.getCurrentSession().get(Patient.class, id);
+        sessionFactory.getCurrentSession().delete(patient);
     }
 }

@@ -1,9 +1,9 @@
 package clinic.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
 public class Visit {
@@ -16,31 +16,34 @@ public class Visit {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column
     @ManyToOne
-    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Patient patient;
 
     @Column
     private String[] problems;
 
-    @Column
     @ManyToOne
-    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    @JsonIgnore
     private Disease disease;
 
     @Column
-    private Date dateTime;
+    private String dateTime;
 
-    @Column
+    @ManyToOne
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    @JsonIgnore
     private Prescription prescription;
 
     // ====================================================================
     // CONSTRUCTOR
     // ====================================================================
 
+    public Visit() {
+    }
 
-    public Visit(Patient patient, String[] problems, Disease disease, Date dateTime, Prescription prescription) {
+    public Visit(Patient patient, String[] problems, Disease disease, String dateTime, Prescription prescription) {
         this.patient = patient;
         this.problems = problems;
         this.disease = disease;
@@ -68,7 +71,7 @@ public class Visit {
         return disease;
     }
 
-    public Date getDateTime() {
+    public String getStringTime() {
         return dateTime;
     }
 
@@ -96,7 +99,7 @@ public class Visit {
         this.disease = disease;
     }
 
-    public void setDateTime(Date dateTime) {
+    public void setStringTime(String dateTime) {
         this.dateTime = dateTime;
     }
 
