@@ -19,7 +19,6 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-
     @RequestMapping(path = "/students", method = RequestMethod.GET)
     public List<Student> getStudents(){
         return studentService.getAllStudents();
@@ -33,5 +32,17 @@ public class StudentController {
     @RequestMapping(path = "/students", method = RequestMethod.POST)
     public void saveStudent(@RequestBody Student student){
         studentService.saveStudent(student);
+    }
+
+    // PRACTICE
+
+    @RequestMapping(path = "/hello", method = RequestMethod.GET)
+    public String hello() {
+        return "Hello World";
+    }
+
+    @RequestMapping(path = "/public", method = RequestMethod.GET)
+    public String publicPage() {
+        return "Public page";
     }
 }

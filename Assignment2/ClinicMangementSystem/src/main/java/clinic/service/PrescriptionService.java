@@ -1,5 +1,7 @@
 package clinic.service;
 
+import clinic.model.Drug;
+import clinic.model.PrescribedDrugs;
 import clinic.model.Prescription;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -8,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 
 @Transactional

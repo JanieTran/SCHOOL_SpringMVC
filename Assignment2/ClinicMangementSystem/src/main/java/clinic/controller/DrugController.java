@@ -22,12 +22,6 @@ public class DrugController {
         return log(drug.getId(), "post");
     }
 
-    @RequestMapping(path = "load-drugs", method = RequestMethod.POST)
-    public String loadDrugs() {
-        drugService.loadDrugs();
-        return "Finished loading drugs";
-    }
-
     // ====================================================================
     // READ
     // ====================================================================

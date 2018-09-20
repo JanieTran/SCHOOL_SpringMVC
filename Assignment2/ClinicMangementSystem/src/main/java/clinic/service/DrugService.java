@@ -32,26 +32,6 @@ public class DrugService {
         sessionFactory.getCurrentSession().save(drug);
     }
 
-    public void loadDrugs() {
-        String dataPath = "\\data\\drugs.csv";
-        File dataFile = new File(dataPath);
-        String line;
-
-        try {
-            Scanner input = new Scanner(dataFile);
-
-            while (input.hasNext()) {
-                line = input.nextLine();
-                String[] data = line.split(",");
-                Drug drug = new Drug(data[1]);
-
-                saveDrug(drug);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     // ====================================================================
     // READ
     // ====================================================================

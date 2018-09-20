@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- JQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var access_token = localStorage.getItem('access_token')
+            $.ajax ({
+                url: `http://localhost:8080/students?access_token=${access_token}`,
+                method: 'get',
+                success: function(result) {
+                    for (var i = 0; i < result.length; i++) {
+                        $('#lstStudent').append(`<li>${result[i].name}</li>`)
+                    }
+                },
+                error: function() {
+                    document.location = 'login.html'
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>List of Students</h1>
+            <div id="lstStudent">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

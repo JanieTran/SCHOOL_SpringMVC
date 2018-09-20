@@ -1,5 +1,8 @@
 package clinic.service;
 
+import clinic.model.Disease;
+import clinic.model.Patient;
+import clinic.model.Prescription;
 import clinic.model.Visit;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -28,15 +31,64 @@ public class VisitService {
         sessionFactory.getCurrentSession().save(visit);
     }
 
+    public void addVisit(String body) {
+        Visit visit = createVisit(body);
+
+        saveVisit(visit);
+    }
+
+    private Visit createVisit(String body) {
+        body = body.substring(1, body.length() - 1).trim();
+        String[] bodyElements = body.split("\n");
+
+        Visit visit = new Visit();
+
+        for (String element : bodyElements) {
+            element = element.replaceAll("\"", "");
+            if (element.charAt(element.length() - 1) == ',')
+                element = element.substring(0, element.length() - 1);
+
+            String key = element.split(":")[0].trim();
+            String val = element.split(":")[1].trim();
+
+            switch (key) {
+                case "patient":
+                    Patient patient = (Patient) sessionFactory.getCurrentSession()
+                            .get(Patient.class, Integer.parseInt(val));
+                    visit.setPatient(patient);
+                    break;
+
+                case "disease":
+                    Disease disease = (Disease) sessionFactory.getCurrentSession()
+                            .get(Disease.class, Integer.parseInt(val));
+                    visit.setDisease(disease);
+                    break;
+
+                case "problems":
+                    visit.setProblems(new String[]{val});
+                    break;
+
+                case "prescription":
+                    Prescription prescription = (Prescription) sessionFactory.getCurrentSession()
+                            .get(Prescription.class, Integer.parseInt(val));
+                    visit.setPrescription(prescription);
+                    break;
+
+                case "stringTime":
+                    visit.setStringTime(val);
+                    break;
+            }
+        }
+
+        return visit;
+    }
+
     // ====================================================================
     // READ
     // ====================================================================
 
     public Visit getVisitById(int id) {
-        Query query = sessionFactory.getCurrentSession().createQuery("from Visit where id:id");
-        query.setInteger("id", id);
-
-        return (Visit) query.uniqueResult();
+        return (Visit) sessionFactory.getCurrentSession().get(Visit.class, id);
     }
 
     public List<Visit> getAllVisits() {
@@ -73,7 +125,7 @@ public class VisitService {
     }
 
     public List getVisitsPerDay() {
-        String sqlQuery = "select count(patient) " +
+        String sqlQuery = "select dateTime, count(id) " +
                           "from Visit " +
                           "group by dateTime";
         Query query = sessionFactory.getCurrentSession().createQuery(sqlQuery);

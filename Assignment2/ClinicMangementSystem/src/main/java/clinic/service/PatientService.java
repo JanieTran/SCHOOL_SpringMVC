@@ -33,10 +33,7 @@ public class PatientService {
     // ====================================================================
 
     public Patient getPatientById(int id) {
-        Query query = sessionFactory.getCurrentSession().createQuery("from Patient where id:id");
-        query.setInteger("id", id);
-
-        return (Patient) query.uniqueResult();
+        return (Patient) sessionFactory.getCurrentSession().get(Patient.class, id);
     }
 
     public List<Patient> getAllPatients() {

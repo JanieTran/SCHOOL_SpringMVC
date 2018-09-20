@@ -1,5 +1,7 @@
 package clinic.controller;
 
+import clinic.model.Disease;
+import clinic.model.Patient;
 import clinic.model.Visit;
 import clinic.service.VisitService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +19,9 @@ public class VisitController {
     // ====================================================================
 
     @RequestMapping(path = "add-visit", method = RequestMethod.POST)
-    public String addVisit(@RequestBody Visit visit) {
-        visitService.saveVisit(visit);
-        return log(visit.getId(), "post");
+    public String addVisit(@RequestBody String body) {
+        visitService.addVisit(body);
+        return "New visit added";
     }
 
     // ====================================================================

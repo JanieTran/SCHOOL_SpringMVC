@@ -1,6 +1,5 @@
 package clinic.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
@@ -25,7 +24,6 @@ public class Visit {
 
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    @JsonIgnore
     private Disease disease;
 
     @Column
@@ -33,7 +31,6 @@ public class Visit {
 
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    @JsonIgnore
     private Prescription prescription;
 
     // ====================================================================

@@ -18,12 +18,10 @@ public class PrescribedDrugs {
 
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    @JsonIgnore
     private Prescription prescription;
 
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    @JsonIgnore
     private Drug drug;
 
     // ====================================================================

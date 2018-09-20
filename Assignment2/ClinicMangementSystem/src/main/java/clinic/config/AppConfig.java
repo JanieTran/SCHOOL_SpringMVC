@@ -17,7 +17,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @EnableWebMvc
-@ComponentScan({"clinic.controller", "clinic.service"})
+@ComponentScan("clinic")
 public class AppConfig {
 
     @Bean
@@ -26,15 +26,15 @@ public class AppConfig {
         Properties properties = new Properties();
         properties.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
         properties.put("hibernate.show_sql", true);
-        properties.put("hibernate.hbm2ddl.auto", "create-drop");
+        properties.put("hibernate.hbm2ddl.auto", "update");
 
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
         //To use postgresql
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/clinic");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("m1ssPh0rtun3");
+        dataSource.setUrl("jdbc:postgresql://ec2-35-162-65-166.us-west-2.compute.amazonaws.com:5432/clinic");
+        dataSource.setUsername("power_user");
+        dataSource.setPassword("$poweruserpassword");
 
         LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
         sessionFactoryBean.setDataSource(dataSource);

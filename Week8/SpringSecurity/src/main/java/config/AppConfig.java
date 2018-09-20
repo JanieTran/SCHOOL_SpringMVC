@@ -21,7 +21,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @EnableWebMvc
-@ComponentScan("controller")
+@ComponentScan({"controller", "config", "service"})
 @Import(SecurityConfig.class)
 public class AppConfig {
 

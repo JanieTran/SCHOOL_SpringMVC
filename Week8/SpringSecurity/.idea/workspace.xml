@@ -2,39 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="433968f1-be5b-4e94-91ef-76f05d59650a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/DrugController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/PrescriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/VisitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/data/diseases.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/data/drugs.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Drug.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/PrescribedDrugs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/DrugService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/PrescriptionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/VisitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Week6/test/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Week6/test/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Week6/test/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Week6/test/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/PrescribedDrugsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/PrescribedDrugsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/UserDetailsServiceImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/UserRoles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/DiseaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/DiseaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Disease.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Disease.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Prescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/DrugController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/DrugController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/VisitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/controller/VisitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/data/diseases.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/data/drugs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/PrescribedDrugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/PrescribedDrugs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/model/Visit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/DiseaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/DiseaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/DrugService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/DrugService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/PrescriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/PrescriptionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/VisitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/src/main/java/clinic/service/VisitService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/config/AppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment2/~$signment 2 Note.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week5/HelloHibernateAnnotation/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week5/HelloHibernateAnnotation/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week5/HelloHibernateAnnotation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week5/HelloHibernateAnnotation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week6/HelloHibernateSpringMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week6/HelloHibernateSpringMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week6/HelloHibernateSpringMVC/target/classes/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week6/HelloHibernateSpringMVC/target/classes/model/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week6/HelloHibernateSpringMVC/target/classes/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week6/HelloHibernateSpringMVC/target/classes/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/controller/DrugController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/controller/DrugController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/controller/VisitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/controller/VisitController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/model/PrescribedDrugs.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/model/PrescribedDrugs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/model/Visit.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/model/Visit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/service/DrugService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/service/DrugService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/service/PatientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/service/PatientService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/service/PrescriptionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/service/PrescriptionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/service/VisitService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/classes/clinic/service/VisitService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment2/ClinicMangementSystem/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/SpringSecurityInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/SpringSecurityInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/WebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/WebAppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,44 +61,119 @@
     <session id="-1887170048">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="16" />
+          <entry key="dummy" value="14" />
+          <entry key="java" value="2111" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16" />
+          <entry key="JAVA" value="2111" />
+          <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/config/AppConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+            <state relative-caret-position="19">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/config/UserDetailsServiceImplementation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Users.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/StudentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Roles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/UserRoles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding>
+                <element signature="e#324#325#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -92,6 +181,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/config/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/UserRoles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Users.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Roles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/config/UserDetailsServiceImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/config/AppConfig.java" />
       </list>
     </option>
@@ -107,13 +205,16 @@
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,14 +276,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535085697170" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Week11/SpringOAuth2JWTCORS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -208,29 +309,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534472708914</updated>
-      <workItem from="1534472710213" duration="64000" />
+      <workItem from="1534472710213" duration="8281000" />
+      <workItem from="1534645975158" duration="76000" />
+      <workItem from="1535077167844" duration="6041000" />
+      <workItem from="1536291788430" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64000" />
+    <option name="totallyTimeSpent" value="14418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22281879" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -238,15 +336,20 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2851064" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,10 +359,106 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/config/WebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/config/SpringSecurityInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/config/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+        <state relative-caret-position="228">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/config/UserDetailsServiceImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Roles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding>
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/UserRoles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
