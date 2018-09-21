@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="HelloHibernateSpringMVC:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="SpringOAuth2JWTCORS-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="HelloHibernateSpringMVC:war exploded" />
+    </root>
+  </artifact>
+</component>
